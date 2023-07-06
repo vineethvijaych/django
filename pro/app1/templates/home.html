@@ -1,10 +1,18 @@
 {% extends 'base.html' %}
 {% load static %}
-   
+  
+{% block css %}  
+<link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
  {% block title %}
  <title>home page</title>
  {% endblock %}
 
     {% block content %}
     <h1>HomePage</h1>
+    {% endblock %}
+
+    {% block imgage %}
+    <img src="{% static 'images/image-web-3-desktop.jpg' %}" alt="">
     {% endblock %}
