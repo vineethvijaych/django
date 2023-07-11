@@ -11,6 +11,18 @@
 
     {% block content %}
     <h1>HomePage</h1>
+
+    {% for i in studs %}
+    <h2>{{i.id_no}}</h2>
+    <h2>{{i.sname}}</h2>
+    <h4>{{i.cname}}</h4>
+    {% endfor %}
+
+    {% for j in deps %}
+    <p>{{j.dname}}</p>
+    {% endfor %}
+
+
     {% endblock %}
 
     {% block imgage %}
