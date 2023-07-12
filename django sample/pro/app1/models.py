@@ -12,6 +12,9 @@ class student(models.Model):
     def __str__(self):
         return self.student_name
 
+class pictures(models.Model):
+    img=models.ImageField(upload_to="mypics/")
+
 
 
 

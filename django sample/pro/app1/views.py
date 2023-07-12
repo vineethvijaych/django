@@ -15,3 +15,9 @@ def contact(request):
 
 def table(request):
     return render(request,'table.html')
+
+def image(request):
+    d={
+        'fields':pictures.objects.all()
+    }
+    return render(request,'image.html',d)

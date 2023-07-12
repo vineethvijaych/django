@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block css %}
+
+{% endblock %}
+
+{% block title %}
+<title>image</title>
+{% endblock %}
+
+{% block content %}
+
+    {% for j in fields  %}
+    <img src="{{j.img.url}}" alt="12" width="200">
+    {% endfor %}
+
+    {% endblock %}
