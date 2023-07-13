@@ -14,10 +14,17 @@ def contact(request):
     return render(request,'contact.html')
 
 def table(request):
-    return render(request,'table.html')
+    d={
+        'stud': student.objects.all()
+    }
+    return render(request,'table.html',d)
 
 def image(request):
     d={
         'fields':pictures.objects.all()
     }
     return render(request,'image.html',d)
+
+def form(request):
+    
+    return render(request,'form.html')

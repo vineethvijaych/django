@@ -11,10 +11,11 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class="text-center mt-5">PHP/MySQLiCRUD Operation using Bootstrap</h2>
+    <h2 class="text-center mt-5">STUDENT MANAGEMENT SYSTEM</h2>
 
     <div class="container">
-        <button type="button" class="btn btn-primary mt-5">+ add new</button>
+        <button type="button" class="btn btn-primary mt-5"><a href="form" class="text-decoration-none text-light">+ add new</a></button>
+        
         <div class="row mt-5 ">
             <div class="col-lg">
                 <table class="table  text-center">
@@ -22,28 +23,21 @@
                       <tr>
                         <th scope="col">first name</th>
                         <th scope="col">last name</th>
-                        <th scope="col">address</th>
+                        <th scope="col">course</th>
                         <th scope="col">action</th>
                       </tr>
                     </thead>
                     <tbody>
+
+                      {% for j in stud %}
                       <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
+                        <td scope="row">{{ j.student_name }}</td>
+                        <td>{{ j.lname }}</td>
+                        <td>{{ j.course_name}}</td>
                         <td><button type="button" class="btn btn-warning">edit</button><button type="button" class="btn btn-danger ms-3">Delete</button></td>
                       </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td></td>
-                        <td></td>
-                        <td><button type="button" class="btn btn-warning">edit</button><button type="button" class="btn btn-danger ms-3">Delete</button></td>
-                      </tr>
-                      <tr>
-                        <th scope="row"></th>
-                        <td colspan="2"></td>
-                        <td><button type="button" class="btn btn-warning">edit</button><button type="button" class="btn btn-danger ms-3">Delete</button></td>
-                      </tr>
+                      {% endfor %}
+                      
                     </tbody>
                   </table>
 

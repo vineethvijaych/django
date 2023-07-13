@@ -5,5 +5,6 @@ urlpatterns=[
     path('about',views.about,name="about"),
     path('contact',views.contact,name="contatc"),
     path('table',views.table,name="table"),
-    path('image',views.image,name="image")
+    path('image',views.image,name="image"),
+    path('form',views.form,name="form")
 ]
