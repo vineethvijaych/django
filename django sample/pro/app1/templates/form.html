@@ -8,28 +8,26 @@
 </head>
 <body>
     <div class="container">
-    <form class="row g-3 mt-5">
+    <form class="row g-3 mt-5" method="post">
+      {% csrf_token %}
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">enroll no.</label>
+        <input type="number" class="form-control" name="number" value="vineeth" id="inputEmail4">
+      </div>
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">First Name</label>
-          <input type="email" class="form-control" id="inputEmail4">
+          <input type="text" class="form-control" name="fname" id="inputEmail4">
         </div>
         <div class="col-md-6">
           <label for="inputPassword4" class="form-label">Last Name</label>
-          <input type="password" class="form-control" id="inputPassword4">
+          <input type="text" class="form-control" name="lname" id="inputPassword4">
         </div>
-        <div class="col-6">
-            <label for="inputState" class="form-label">Course</label>
-            <select id="inputState" class="form-select">
-                <option selected>Choose...</option>
-                <option>python</option>
-                <option>full-stack</option>
-                <option>digital marketing</option>
-                <option>networking</option>
-            </select>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label">Course</label>
+          <input type="text" class="form-control" name="cname" id="inputPassword4">
         </div>
-        
         <div class="col-12">
-          <button type="submit"  class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </form>
     </div>

@@ -6,5 +6,7 @@ urlpatterns=[
     path('contact',views.contact,name="contatc"),
     path('table',views.table,name="table"),
     path('image',views.image,name="image"),
-    path('form',views.form,name="form")
+    path('form',views.form,name="form"),
+    path('delete/<int:s_id>',views.delete,name="delete")
+    
 ]
