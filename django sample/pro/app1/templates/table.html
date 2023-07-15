@@ -34,8 +34,8 @@
                         <td scope="row">{{ j.student_name }}</td>
                         <td>{{ j.lname }}</td>
                         <td>{{ j.course_name}}</td>
-                        <td>
-                          <button type="button" class="btn btn-warning">edit</button>
+                        <td >
+                          <a href="{% url 'edit' s_id=j.id %}"><button type="button" class="btn btn-warning">edit</button></a>
                           <a href="{% url 'delete' s_id=j.id %}"><button type="button" class="btn btn-danger ms-3">Delete</button></a>
                         </td>
                       </tr>
