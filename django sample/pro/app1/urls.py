@@ -8,6 +8,7 @@ urlpatterns=[
     path('image',views.image,name="image"),
     path('form',views.form,name="form"),
     path('delete/<int:s_id>',views.delete,name="delete"),
-    path('edit/<int:s_id>',views.edit,name="edit")
+    path('edit/<int:s_id>',views.edit,name="edit"),
+    path('regi',views.reg,name="reg")
     
 ]
