@@ -9,6 +9,8 @@ urlpatterns=[
     path('form',views.form,name="form"),
     path('delete/<int:s_id>',views.delete,name="delete"),
     path('edit/<int:s_id>',views.edit,name="edit"),
-    path('regi',views.reg,name="reg")
+    path('regi',views.reg,name="reg"),
+    path('login',views.loginpage,name="loginpage"),
+    path('logout',views.userlogout,name="userlogout"),
     
 ]

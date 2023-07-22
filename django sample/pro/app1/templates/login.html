@@ -8,43 +8,30 @@
 </head>
 
 <body>
-    <!-- <form action="" method="post">
-        {% csrf_token %}
-        <input type="text" name="uname" placeholder="username">
-        <input type="email" name="useremail" placeholder="useremail">
-        <input type="text" name="pswd" placeholder="userpassword">
-        <input type="text" name="cswd" placeholder="confirm password">
-        <button type="submit">SUBMIT</button>
-    </form> -->
+   
 
 <!-- --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- -->
 
-<div class="testbox" >
+<div class="testbox"  >
     <form action="" method="post">
       {% csrf_token %}
       <div class="banner">
-        <h1> Registration Form</h1>
+        <h1> login Form</h1>
       </div>
       <p>Runner Information</p>
       <div class="item">
         <label>Name<span>*</span></label>
-        <input id="uname" type="text" name="uname" required/>
+        <input id="username" type="text" name="username" required/>
       </div>
-      <div class="item">
-        <label >Email Address<span>*</span></label>
-        <input id="useremail" type="email" name="useremail" required/>
-      </div>
+      
       <div class="item">
         <label >password<span>*</span></label>
-        <input id="pswd" type="text" name="pswd" required/>
+        <input id="password" type="text" name="password" required/>
       </div>
-      <div class="item">
-        <label >confirm password<span>*</span></label>
-        <input id="cswd" type="text" name="cswd" required/>
-      </div>
+      
      
         <button type="submit" href="">SUBMIT</button>
-
+        <a href="{% static  'templates/reg.html'%}">clickhere</a>
       </div>
     </form>
   </div>
